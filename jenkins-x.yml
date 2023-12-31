@@ -56,13 +56,6 @@ pipelineConfig:
           steps:
           - args:
             - step
-            - git
-            - validate
-            command: jx
-            dir: /workspace/source/env
-            name: validate-git
-          - args:
-            - step
             - verify
             - preinstall
             - --provider-values-dir="kubeProviders"
